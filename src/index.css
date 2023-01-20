@@ -3,6 +3,23 @@
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #15132a;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #15132a;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #86aace;
+}
+
 body {
   background-color: #15132a;
 }
@@ -49,6 +66,7 @@ header {
   font-size: 3rem;
   color: #9dfded;
   font-family: "Do Hyeon", sans-serif;
+  padding-left: 30px;
 }
 
 .header--socials {
@@ -111,7 +129,7 @@ header {
 .header--button span {
   background-color: white;
   border-radius: 10px;
-  height: 7px;
+  height: 4px;
   margin: 7px 0;
   transition: 0.4s cubic-bezier(0.7, -0.6, 0.3, 1.6);
 }
@@ -147,7 +165,7 @@ header {
 .header--check:checked ~ .header--button > span:nth-of-type(3) {
   transform-origin: bottom;
   width: 50%;
-  transform: translate(-03px, -11px) rotatez(45deg);
+  transform: translate(-4px, -8px) rotatez(45deg);
 }
 
 .header--check:checked ~ .header--menu {
@@ -191,16 +209,46 @@ header {
   }
 }
 
+/* HERO */
+
 .hero {
   color: #9dfded;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  padding: 10%;
+  height: 100vh;
 }
 
 .hero h1 {
   color: #9dfded;
   font-family: "Nunito", sans-serif;
+  margin-bottom: 20px;
+  font-size: clamp(17px, 5vw, 20px);
 }
 
 .hero h2 {
+  color: #edf6ff;
+  font-size: clamp(40px, 8vw, 80px);
+}
+
+.hero h3 {
+  font-size: clamp(40px, 8vw, 80px);
+  color: #86aace;
+  line-height: 110%;
+  margin-bottom: 30px;
+}
+
+.hero p {
+  font-size: 1.4rem;
+  color: #86aace;
+}
+
+/* ABOUT */
+.about {
+  color: #edf6ff;
   font-family: "Poppins", sans-serif;
-  color: #9dfded;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
 }
