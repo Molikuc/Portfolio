@@ -265,7 +265,6 @@ header {
   justify-content: flex-start;
   flex-direction: column;
   padding: 20px 10%;
-  height: 150vh;
 }
 
 .about h2 {
@@ -312,6 +311,32 @@ header {
 
 .about--image:hover img {
   filter: none;
+}
+
+@media screen and (min-width: 760px) {
+  .about {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .about h2 {
+    padding-bottom: 30px;
+  }
+
+  .about--inner {
+    display: flex;
+  }
+
+  .about--image {
+    margin: 0;
+    padding-left: 20px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .about {
+    padding: 0 15%;
+  }
 }
 
 /* TOOLS */
