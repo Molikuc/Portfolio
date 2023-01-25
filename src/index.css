@@ -254,7 +254,7 @@ header {
   .hero {
     background: url(./images/hero.svg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 60px center;
   }
 }
 
@@ -303,6 +303,7 @@ header {
   filter: contrast(128%) grayscale(100%) hue-rotate(0deg) invert(0%)
     opacity(100%) saturate(120%) sepia(0%);
   mix-blend-mode: none;
+  transition: 100ms;
 }
 
 .about--image:hover::after {
@@ -325,17 +326,17 @@ header {
 
   .about--inner {
     display: flex;
+    gap: 60px;
   }
 
   .about--image {
     margin: 0;
-    padding-left: 20px;
   }
 }
 
 @media screen and (min-width: 1120px) {
   .about {
-    padding: 0 15%;
+    padding: 5% 20% 10%;
   }
 }
 
