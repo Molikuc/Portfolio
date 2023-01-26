@@ -24,6 +24,14 @@ body {
   background-color: #15132a;
 }
 
+.blue {
+  color: #0008ff;
+}
+
+.bold {
+  font-weight: bold;
+}
+
 header {
   padding: 20px;
   font-family: Poppins, sans-serif;
@@ -173,7 +181,7 @@ header {
   transition: 0.4s cubic-bezier(0.37, 0.17, 0.4, 0.79);
 }
 
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 768px) {
   header {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
@@ -207,7 +215,7 @@ header {
   }
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1200px) {
   .header--menu {
     padding-top: 10px;
     width: 30vw;
@@ -250,7 +258,7 @@ header {
   color: #86aace;
 }
 
-@media screen and (min-width: 1120px) {
+@media screen and (min-width: 1200px) {
   .hero {
     background: url(./images/hero.svg);
     background-repeat: no-repeat;
@@ -314,7 +322,7 @@ header {
   filter: none;
 }
 
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 768px) {
   .about {
     flex-direction: row;
     flex-wrap: wrap;
@@ -334,7 +342,7 @@ header {
   }
 }
 
-@media screen and (min-width: 1120px) {
+@media screen and (min-width: 1200px) {
   .about {
     padding: 5% 20% 10%;
   }
@@ -344,10 +352,88 @@ header {
 
 .tools {
   font-family: "Poppins", sans-serif;
-  color: white;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  padding: 20px 10%;
-  height: 150vh;
+  padding: 100px 10%;
+  gap: 50px;
+}
+
+.tools h2 {
+  color: #edf6ff;
+  font-size: 40px;
+}
+
+.tools--container {
+  border-radius: 50px;
+  background-color: #edf6ff;
+  display: flex;
+  flex-direction: column;
+  color: #162c53;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.tools--design,
+.tools--frontend-developer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+  gap: 20px;
+}
+
+.tools--frontend-developer {
+  border-top: 1px solid black;
+}
+
+.icon {
+  font-size: 3rem;
+}
+
+.tools--list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding: 5px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .tools--container {
+    flex-direction: row;
+    background-color: #15132a;
+    gap: 30px;
+  }
+
+  .tools--design {
+    justify-content: flex-start;
+  }
+
+  .tools--design,
+  .tools--frontend-developer {
+    background-color: #edf6ff;
+    border-radius: 50px;
+    width: 50%;
+  }
+
+  .frontend--canDoList {
+    padding-top: 18px;
+  }
+}
+
+/* PROJECT  */
+
+.project {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 100px 10%;
+  color: white; /*for test */
+}
+
+.project h2 {
+  color: #edf6ff;
+  font-size: 40px;
 }

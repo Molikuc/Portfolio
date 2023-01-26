@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaInstagram, FaLinkedin, FaDribbble } from "react-icons/fa";
 
 function Header() {
   return (
@@ -31,6 +31,12 @@ function Header() {
               href="https://github.com/Molikuc"
               target="_blank">
               <FaGithub />
+            </a>
+            <a
+              className="header--socials"
+              href="https://dribbble.com/Polikuc"
+              target="_blank">
+              <FaDribbble />
             </a>
             <a
               href="mailto:ruiz.alexis1996@gmail.com"
