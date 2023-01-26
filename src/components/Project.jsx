@@ -78,7 +78,7 @@ function Project() {
         </a>
       </div>
       <div className="project--articles">
-        <div>I make articles of my coding path</div>
+        <div>I make articles of my coding journey</div>
         <a
           className="project--button"
           href="https://dev.to/molikuc"
