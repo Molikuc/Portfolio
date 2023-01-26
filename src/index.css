@@ -485,6 +485,12 @@ header {
   position: relative;
 }
 
+.project--image {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
 .project--overlay {
   position: absolute;
   top: 0;
@@ -497,8 +503,12 @@ header {
 
 .project--title {
   position: absolute;
-  top: 130px;
-  transition: top 0.5s ease;
+  top: 70px;
+  font-weight: 500;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  color: #9dfded;
+  z-index: 1;
 }
 
 .anime--button {
@@ -516,7 +526,7 @@ header {
   border-radius: 5px;
   font-family: "Poppins", sans-serif;
   color: #9dfded;
-  border: solid 2px #9dfded;
+  border: solid 3px #9dfded;
 }
 
 .anime--button a:hover {
@@ -531,7 +541,7 @@ header {
 
 .project--developer > div:hover .project--title,
 .project--design > div:hover .project--title {
-  top: 90px;
+  opacity: 1;
 }
 
 .project--developer > div:hover .anime--button,

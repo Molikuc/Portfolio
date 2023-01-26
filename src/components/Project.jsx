@@ -1,6 +1,9 @@
 import React from "react";
 import { FaDribbble, FaGithub } from "react-icons/fa";
 import { SiDevdotto } from "react-icons/si";
+import UpToss from "../images/UpToss.png";
+import Drive from "../images/Drive.png";
+import Lincoln from "../images/Lincoln_National_Park.png";
 
 function Project() {
   return (
@@ -12,7 +15,7 @@ function Project() {
           <p className="project--title">SKETCH</p>
           <div className="project--overlay"></div>
           <div className="anime--button">
-            <a href="https://google.com" target="_blank">
+            <a href="https://molikuc.github.io/sketch/" target="_blank">
               Click
             </a>
           </div>
@@ -21,7 +24,7 @@ function Project() {
           <p className="project--title">Tic Tac Toe</p>
           <div className="project--overlay"></div>
           <div className="anime--button">
-            <a href="https://google.com" target="_blank">
+            <a href="https://molikuc.github.io/Tictactoe/" target="_blank">
               Click
             </a>
           </div>
@@ -30,7 +33,7 @@ function Project() {
           <p className="project--title">Weather (WIP)</p>
           <div className="project--overlay"></div>
           <div className="anime--button">
-            <a href="https://google.com" target="_blank">
+            <a href="https://molikuc.github.io/WeatherApp/" target="_blank">
               Click
             </a>
           </div>
@@ -44,28 +47,37 @@ function Project() {
       </div>
       <div className="project--design">
         <div>
-          <p className="project--title">LOGO1</p>
+          <img src={UpToss} className="project--image" />
+          <p className="project--title">Logo "UpToss" made for a challenge</p>
           <div className="project--overlay"></div>
           <div className="anime--button">
-            <a href="https://google.com" target="_blank">
+            <a
+              href="https://dribbble.com/shots/19705425-Daily-Logo-Challenge-Day-26-Paper-Airplane"
+              target="_blank">
               Click
             </a>
           </div>
         </div>
         <div>
-          <p className="project--title">LOGO2</p>
+          <img src={Drive} className="project--image" />
+          <p className="project--title">Logo "Drive" made for a challenge</p>
           <div className="project--overlay"></div>
           <div className="anime--button">
-            <a href="https://google.com" target="_blank">
+            <a
+              href="https://dribbble.com/shots/19723888-Daily-Logo-Challenge-Day-29-Rideshare-Car-Service"
+              target="_blank">
               Click
             </a>
           </div>
         </div>
         <div>
-          <p className="project--title">LOGO3</p>
+          <img src={Lincoln} className="project--image" />
+          <p className="project--title">Logo for a fictional National Park</p>
           <div className="project--overlay"></div>
           <div className="anime--button">
-            <a href="https://google.com" target="_blank">
+            <a
+              href="https://dribbble.com/shots/19666137-Daily-Logo-Challenge-Day-20-National-Park"
+              target="_blank">
               Click
             </a>
           </div>
