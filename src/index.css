@@ -32,6 +32,10 @@ body {
   font-weight: bold;
 }
 
+.icon-size_button {
+  font-size: 1.5rem;
+}
+
 header {
   padding: 20px;
   font-family: Poppins, sans-serif;
@@ -195,7 +199,7 @@ header {
     position: absolute;
     background-color: #15132a;
     padding-top: 10px;
-    width: 50vw;
+    width: 53vw;
     height: 13vh;
     transition: none;
     transform: translate(0px);
@@ -218,7 +222,7 @@ header {
 @media screen and (min-width: 1200px) {
   .header--menu {
     padding-top: 10px;
-    width: 30vw;
+    width: 36vw;
     height: 12vh;
   }
 }
@@ -418,7 +422,7 @@ header {
   }
 
   .frontend--canDoList {
-    padding-top: 18px;
+    padding-top: 22px;
   }
 }
 
@@ -436,4 +440,140 @@ header {
 .project h2 {
   color: #edf6ff;
   font-size: 40px;
+  padding-bottom: 30px;
+}
+
+.project--developer,
+.project--design {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 30px 0;
+}
+
+.project--developer > div,
+.project--design > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  width: 100%;
+  color: black;
+  background-color: #edf6ff;
+  border-radius: 10px;
+  position: relative;
+}
+
+.project--overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.5s ease;
+}
+
+.project--title {
+  position: absolute;
+  top: 130px;
+  transition: top 0.5s ease;
+}
+
+.anime--button {
+  position: absolute;
+  top: 180px;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.anime--button a {
+  width: 200px;
+  padding: 12px 48px;
+  text-align: center;
+  color: white;
+  border: solid 2px white;
+}
+
+.project--developer > div:hover .project--overlay,
+.project--design > div:hover .project--overlay {
+  display: block;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.project--developer > div:hover .project--title,
+.project--design > div:hover .project--title {
+  top: 90px;
+}
+
+.project--developer > div:hover .anime--button,
+.project--design > div:hover .anime--button {
+  opacity: 1;
+}
+
+.project--articles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project--articles > div {
+  font-size: 1.2rem;
+}
+
+.project--design > .project--button,
+.project--developer > .project--button {
+  width: 250px;
+}
+
+.project--button {
+  border: 2px solid #9dfded;
+  color: #9dfded;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  height: 40px;
+  width: 180px;
+  text-decoration: none;
+  margin: 30px 0;
+  cursor: pointer;
+  gap: 10px;
+}
+
+.project--button:hover {
+  background-color: rgba(100, 255, 218, 0.1);
+}
+
+@media screen and (min-width: 768px) {
+  .project--developer,
+  .project--design {
+    display: grid;
+    column-gap: 30px;
+    grid-template-columns: 50% 50%;
+  }
+
+  .project--button {
+    margin: auto;
+  }
+
+  .project--articles,
+  .project--articles > .project--button {
+    margin: 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .project--developer,
+  .project--design {
+    grid-template-columns: 33% 33% 33%;
+  }
+
+  .project--button {
+    grid-column: 2;
+    margin-top: 30px;
+  }
 }

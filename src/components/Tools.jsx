@@ -32,7 +32,7 @@ function Tools() {
           <h3>Frontend Developer</h3>
           <p>I like coding things and turning your ideas into life</p>
           <div className="frontend--canDoList">
-            <p className="blue bold">What I can do</p>
+            <p className="blue bold">What I can do:</p>
             <p>HTML, CSS, Javascript</p>
           </div>
           <div>
