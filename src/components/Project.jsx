@@ -4,6 +4,8 @@ import { SiDevdotto } from "react-icons/si";
 import UpToss from "../images/UpToss.png";
 import Drive from "../images/Drive.png";
 import Lincoln from "../images/Lincoln_National_Park.png";
+import Sketch from "../images/sketch.png";
+import TicTacToe from "../images/tictactoe.png";
 
 function Project() {
   return (
@@ -12,7 +14,8 @@ function Project() {
       <p>Here are a few projects I've done!</p>
       <div className="project--developer">
         <div>
-          <p className="project--title">SKETCH</p>
+          <img src={Sketch} className="project--image" />
+          <p className="project--title">Sketch Game you can draw</p>
           <div className="project--overlay"></div>
           <div className="anime--button">
             <a href="https://molikuc.github.io/sketch/" target="_blank">
@@ -21,7 +24,8 @@ function Project() {
           </div>
         </div>
         <div>
-          <p className="project--title">Tic Tac Toe</p>
+          <img src={TicTacToe} className="project--image" />
+          <p className="project--title">Tic Tac Toe game</p>
           <div className="project--overlay"></div>
           <div className="anime--button">
             <a href="https://molikuc.github.io/Tictactoe/" target="_blank">
