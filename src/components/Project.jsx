@@ -6,6 +6,7 @@ import Drive from "../images/Drive.png";
 import Lincoln from "../images/Lincoln_National_Park.png";
 import Sketch from "../images/sketch.png";
 import TicTacToe from "../images/tictactoe.png";
+import Weather from "../images/WeatherApp.png";
 
 function Project() {
   return (
@@ -34,6 +35,7 @@ function Project() {
           </div>
         </div>
         <div>
+          <img src={Weather} className="project--image" />
           <p className="project--title">Weather (WIP)</p>
           <div className="project--overlay"></div>
           <div className="anime--button">
