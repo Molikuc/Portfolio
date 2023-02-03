@@ -36,7 +36,7 @@ function Project() {
         </div>
         <div>
           <img src={Weather} className="project--image" />
-          <p className="project--title">Weather (WIP)</p>
+          <p className="project--title">Weather App</p>
           <div className="project--overlay"></div>
           <div className="anime--button">
             <a href="https://molikuc.github.io/WeatherApp/" target="_blank">
