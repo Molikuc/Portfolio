@@ -4,8 +4,8 @@ import { SiDevdotto } from "react-icons/si";
 import UpToss from "../images/UpToss.png";
 import Drive from "../images/Drive.png";
 import Lincoln from "../images/Lincoln_National_Park.png";
-import Sketch from "../images/sketch.png";
 import TicTacToe from "../images/tictactoe.png";
+import UrlShortener from "../images/shortener.png";
 import Weather from "../images/WeatherApp.png";
 
 function Project() {
@@ -15,11 +15,11 @@ function Project() {
       <p>Here are a few projects I've done!</p>
       <div className="project--developer">
         <div>
-          <img src={Sketch} className="project--image" />
-          <p className="project--title">Sketch Game you can draw</p>
+          <img src={UrlShortener} className="project--image" />
+          <p className="project--title">Simple URL shortener</p>
           <div className="project--overlay"></div>
           <div className="anime--button">
-            <a href="https://molikuc.github.io/sketch/" target="_blank">
+            <a href="https://molikuc.github.io/urlShortener/" target="_blank">
               Click
             </a>
           </div>
@@ -47,7 +47,8 @@ function Project() {
         <a
           className="project--button"
           href="https://github.com/Molikuc"
-          target="_blank">
+          target="_blank"
+        >
           <FaGithub className="icon-size_button" /> See more on GitHub
         </a>
       </div>
@@ -59,7 +60,8 @@ function Project() {
           <div className="anime--button">
             <a
               href="https://dribbble.com/shots/19705425-Daily-Logo-Challenge-Day-26-Paper-Airplane"
-              target="_blank">
+              target="_blank"
+            >
               Click
             </a>
           </div>
@@ -71,7 +73,8 @@ function Project() {
           <div className="anime--button">
             <a
               href="https://dribbble.com/shots/19723888-Daily-Logo-Challenge-Day-29-Rideshare-Car-Service"
-              target="_blank">
+              target="_blank"
+            >
               Click
             </a>
           </div>
@@ -83,7 +86,8 @@ function Project() {
           <div className="anime--button">
             <a
               href="https://dribbble.com/shots/19666137-Daily-Logo-Challenge-Day-20-National-Park"
-              target="_blank">
+              target="_blank"
+            >
               Click
             </a>
           </div>
@@ -91,7 +95,8 @@ function Project() {
         <a
           className="project--button"
           href="https://dribbble.com/Polikuc"
-          target="_blank">
+          target="_blank"
+        >
           <FaDribbble className="icon-size_button" /> See more on Dribbble
         </a>
       </div>
@@ -100,7 +105,8 @@ function Project() {
         <a
           className="project--button"
           href="https://dev.to/molikuc"
-          target="_blank">
+          target="_blank"
+        >
           <SiDevdotto className="icon-size_button" />
           link to DEV.to
         </a>
