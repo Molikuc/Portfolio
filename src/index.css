@@ -200,7 +200,7 @@ header {
     background-color: #15132a;
     padding-top: 10px;
     width: 53vw;
-    height: 10vh;
+    height: 100px;
     transition: none;
     transform: translate(0px);
   }
@@ -223,7 +223,7 @@ header {
   .header--menu {
     padding-top: 10px;
     width: 36vw;
-    height: 10vh;
+    height: 100px;
   }
 }
 
