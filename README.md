@@ -1,13 +1,13 @@
 # Portfolio
 
-My portfolio, you can find everything about me
+My first verison of my portfolio, you can find everything about me
 
 - 📫 My socials
 - 👷‍♂️ My different projects
 - 🔧 The tools I use
 
 ## Links
-  You can find it here : [ruizalexis.com](https://ruizalexis.com)
+  You can find the new one here : [ruizalexis.com](https://ruizalexis.com)
 
 ### Plus
 
